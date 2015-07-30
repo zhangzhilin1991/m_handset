@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/blue1"
+    >
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="unknow module" 
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/mode_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_gjb"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="请选择工作模式" />
+
+    <Button
+        android:id="@+id/btn_gb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_gen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/select"
+        android:onClick="onClick"
+        android:text="GB" />
+
+    <Button
+        android:id="@+id/btn_gjb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_gb"
+        android:background="@drawable/select"
+        android:onClick="onClick"
+        android:text="GJB" />
+
+    <Button
+        android:id="@+id/btn_gen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_gjb"
+        android:layout_alignBottom="@+id/btn_gjb"
+        android:layout_toRightOf="@+id/btn_gb"
+        android:background="@drawable/select"
+        android:onClick="onClick"
+        android:text="GEN" />
+
+</RelativeLayout>

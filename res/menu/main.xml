@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    tools:context="com.caihua.handset.MainActivity" >
+
+    <item
+        android:id="@+id/power"
+        android:icon="@drawable/atenna_power"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="功率"/>
+    <item
+        android:id="@+id/setting"
+        android:actionProviderClass="com.caihua.handset.plusActionProvider"
+        android:icon="@drawable/setting_1"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="设置"/>
+
+</menu>

@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue1"
+    tools:context="com.caihua.handset.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/control"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/scan_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/white1"
+            android:gravity="center_horizontal"
+            android:text="find nothing" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/module_datail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="no deice" />
+
+    <RelativeLayout
+        android:id="@+id/control"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/module_datail"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/gen2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/gen2_epc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="盘存epc" />
+
+            <Button
+                android:id="@+id/gen2_single_tid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="读单tid"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/gen2_tid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="盘存tid" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gjb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/gjb_epc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="盘存epc" />
+
+            <Button
+                android:id="@+id/gjb_tid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="读单tid" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/gb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/gb_epc"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="盘存epc" />
+
+             <Button
+                android:id="@+id/gb_single_tid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/select"
+                android:onClick="onClick"
+                android:text="读单tid" />
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>
